@@ -27,6 +27,22 @@
 $_name= "Menna El Rouby";
 $_email= "rouby.menna@gmail.com";
 $_mobile= "01221529392";
+$age=33;
+if($age<25)
+{
+  $add_age = "Your age is less than 25";
+}
+if($age<=30)
+{
+  $add_age = "Your age is between 25 and 30";
+}
+if ($age<=40)
+{
+  $add_age = "Your age is between 40 and 31";
+}
+else{
+  $add_age = "Your age is above 40";
+}
 $_image= "<img src='me.jpg' style='width:100%' alt='Avatar'/>"
 ?>
   <!-- Page Container -->
@@ -47,7 +63,7 @@ $_image= "<img src='me.jpg' style='width:100%' alt='Avatar'/>"
           </div>
           <div class="w3-container">
             <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Developer</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Cairo, Egypt</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $add_age?></p>
            <?php echo "<p><i class='fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal'></i> $_email </p>";
                  echo "<p><i class='fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal'></i> $_mobile</p>"; ?>
             <hr>
